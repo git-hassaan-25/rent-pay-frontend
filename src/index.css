@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header-appbar{
+  height: 45px;
+  background-color:#f8f8f8;
+}
+.header-container{
+  height: 45px;
+}
+.header-toolbar{
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0.1em;
+}
+.center-flex{
+  display: flex;
+  align-items: center;
+}
