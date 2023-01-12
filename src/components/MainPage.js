@@ -13,19 +13,19 @@ import Box from "@mui/material/Box";
 import axios from "axios";
 // import imgg from "../../public/hassaan.jpg";
 
-const HomePage = () => {
+const MainPage = () => {
   const [users, setUsers] = useState([]);
-  useEffect(() => {
-    async function getAllUsers() {
-      try {
-        const dataArray = await axios.get("http://127.0.0.1:8000/api/user");
-        setUsers(dataArray.data);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    getAllUsers();
-  }, []);
+  // useEffect(() => {
+  //   async function getAllUsers() {
+  //     try {
+  //       const dataArray = await axios.get("http://127.0.0.1:8000/api/user");
+  //       setUsers(dataArray.data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+  //   getAllUsers();
+  // }, []);
 
   return (
     <Box sx={{ display: "flex", justifyContent: "center", mt: "6%" }}>
@@ -67,4 +67,4 @@ const HomePage = () => {
     </Box>
   );
 };
-export default HomePage;
+export default MainPage;
